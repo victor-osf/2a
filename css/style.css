@@ -14,8 +14,6 @@ body, html {
 
 .aa-header {
   display: flex;
-  max-width: 1024px;
-  margin: 0 auto;
   justify-content: space-around;
   align-items: flex-end;
   padding: 15px 15px;
@@ -55,7 +53,53 @@ body, html {
   padding: 0;
 }
 
-/* RESPONSIVE */
+/* GRID COMPONENT */
+
+.image-grid-container {
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  grid-gap: 20px;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.image-grid-container.column-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-grid-container.column-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.image-grid-container > .img-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-grid-container > .img-container > .subtitle {
+  font-family: 'FuturaStd-Bold';
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.image-grid-container > .img-container > .subtitle > p {
+  background-color: #7c9493;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image-grid-container > .img-container > .subtitle > p > span {
+  float: left;
+  clear: both;
+  background-color: #7c9493;
+  padding: 3px 10px;
+}
+
+/* RESPONSIVE  768 PX*/
 
 @media screen and (max-width: 768px) {
   .aa-header {
@@ -104,6 +148,27 @@ body, html {
   .aa-header > .topnav > a.icon {
     display: block;
   }
-  
 }
 
+/* RESPONSIVE 550 PX*/
+@media screen and (max-width: 550px) { 
+  
+  .image-grid-container.column-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* RESPONSIVE 425 PX*/
+
+@media screen and (max-width: 425px) { 
+  
+  .image-grid-container.column-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image-grid-container.column-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
