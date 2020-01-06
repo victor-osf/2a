@@ -65,6 +65,10 @@ main{
   padding: 0;
 }
 
+.anchor{
+  position: absolute;
+  top: -130px;
+}
 /* GRID COMPONENT */
 
 .image-grid-container {
@@ -121,7 +125,10 @@ main{
     justify-content: space-between;
     align-items: flex-start;
   }
-
+  .anchor{
+    position: absolute;
+    top: -78px;
+  }
   .aa-header>.topnav {
     width: 100%;
     justify-content: space-between;
