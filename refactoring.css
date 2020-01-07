@@ -1,0 +1,94 @@
+/* FIX HEADER */
+
+.aa-header > .topnav {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.aa-header > .topnav > a.logo > img {
+  width: 100px;
+  height: auto;
+}
+
+/* FIX BANNER */
+
+.banner-hero-container .text-container .more-info-button {
+  color: #7c9493;
+  border: 4px solid #75cdc8;
+  background-color: white;
+  text-transform: uppercase;
+  align-self: flex-start;
+  font-family: 'Gotham Book Regular';
+}
+
+/*
+  <button attr-href="/content/we-retail.html" attr-target="_self" class="more-info-button text-with-grid-more-info-button">DESCUBRA
+    <i class="fas fa-chevron-right"></i>
+  </button>
+*/
+
+.more-info-button > .fa-chevron-right{
+  font-size: 14px;
+  color: black;
+}
+
+
+/* FIX GRID */
+
+.gssc-content-container-v2 .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+}
+
+/* FIX BORDAS */
+
+.text-with-image-grid-container .text-container .more-info-button {
+  color: #7c9493;
+  border: 4px solid #75cdc8;
+  background-color: white;
+  text-transform: uppercase;
+  align-self: flex-end;
+  font-family: 'Gotham Book Regular';
+}
+
+/* FIX VIDEO CONTAINER */
+
+.text-with-video-container .big-image {
+  /* margin-left: initial; */
+  /* margin-right: initial; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* display: flex; */
+  /* margin-left: -13.5%; */
+  /* width: 30%; */
+  padding: 0;
+}
+
+.text-with-video-container .big-image .img-container {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 951px) {
+  .text-with-video-container {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .text-with-video-container .text-container {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+
