@@ -574,7 +574,7 @@ body, html {
 }
 
 .text-with-image-grid-container .image-grid-container .img-container img {
-  max-height: 80px;
+  max-height: 50px;
 }
 
 @media (max-width: 950px) {
