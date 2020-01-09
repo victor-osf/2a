@@ -362,9 +362,6 @@ main{
 /* IMAGE CONTACT*/
 
 .contact-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -379,21 +376,44 @@ main{
   max-width: 75px;
 }
 
-.contact-container > .img-container > img {
-  /* width: 100%; */
+.contact-container > .contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px 0;
+  padding: 0;
 }
 
-.contact-container > .description-container {
+.contact-container .description-container {
   color: #75cdc8;
   font-family: 'FuturaStd-Bold';
   font-size: 18px;
   margin-left: 20px;
 }
 
-.contact-container > .description-container > p {
+@media screen and (max-width: 768px) {
+  .contact-container .description-container {
+    font-size: 15px;
+  }
+}
+
+.contact-container .description-container > p {
   margin-bottom: 0;
   line-height: normal;
 }
+
+.contact-container .title {
+  font-family: 'FuturaStd-Bold';
+}
+
+.contact-container .title p {
+  background-color: #75cdc8;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.25rem 0.5rem;
+}
+
 
 /* TEXT WITH BIG IMAGE */
 
