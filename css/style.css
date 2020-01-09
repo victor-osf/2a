@@ -432,8 +432,9 @@ main{
 }
 
 @media (min-width: 951px) {
-  .text-with-big-image-container .text-container {
+  .text-with-big-image-container .text-container:first-child {
     /* width: 30%; */
+    padding-left: 30px;
   }
 }
 
@@ -680,7 +681,8 @@ main{
 
 @media (min-width: 951px) {
   .text-with-video-container .text-container {
-    width: 30%;
+    /* width: 30%; */
+    padding-left: 30px;
   }
 }
 
