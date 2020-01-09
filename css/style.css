@@ -67,7 +67,7 @@ main{
 .aa-header>.topnav {
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -87,8 +87,8 @@ main{
   margin-right: 100px;
 }
 
-.aa-header>.topnav>a.logo>img {
-  width: 150px;
+.aa-header > .topnav > a.logo > img {
+  width: 100px;
   height: auto;
 }
 
@@ -108,7 +108,7 @@ main{
   display: grid;
   margin-top: 20px;
   margin-bottom: 20px;
-  grid-gap: 20px;
+  grid-gap: 0px;
   grid-template-rows: repeat(2, 1fr);
 }
 
@@ -120,8 +120,8 @@ main{
   grid-template-columns: repeat(3, 1fr);
 }
 
-.image-grid-container>.img-container {
-  padding: 10px;
+.image-grid-container > .img-container {
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,7 +272,7 @@ main{
 }
 
 .banner-hero-container .text-container .title {
-  font-family: 'Futura Bold';
+  font-family: 'FuturaStd-Bold';
 }
 
 .banner-hero-container .text-container .title p {
@@ -285,21 +285,27 @@ main{
 
 .banner-hero-container .text-container .content {
   font-size: 12px;
-  font-family: 'Gotham Book Regular';
+  font-family: 'Gotham-Book';
 }
 
 .banner-hero-container .text-container .attention {
-  font-family: 'Futura Bold';
+  font-family: 'FuturaStd-Bold';
   color: #75cdc8;
 }
 
 .banner-hero-container .text-container .more-info-button {
   color: #7c9493;
-  border: 5px solid #75cdc8;
+  border: 4px solid #75cdc8;
   background-color: white;
   text-transform: uppercase;
   align-self: flex-start;
-  font-family: 'Gotham Book Regular';
+  font-family: 'Gotham-Book';
+  padding: 5px 15px;
+}
+
+.banner-hero-container .text-container .more-info-button > .fa-chevron-right  {
+  font-size: 14px;
+  padding-left: 10px;
 }
 
 .banner-hero-container .big-image {
@@ -376,7 +382,7 @@ main{
 
 .contact-container > .description-container {
   color: #75cdc8;
-  font-family: 'Futura Bold';
+  font-family: 'FuturaStd-Bold';
   font-size: 25px;
   align-self: center;
   margin-left: 20px;
@@ -426,13 +432,14 @@ main{
 }
 
 @media (min-width: 951px) {
-  .text-with-big-image-container .text-container {
+  .text-with-big-image-container .text-container:first-child {
     /* width: 30%; */
+    padding-left: 30px;
   }
 }
 
 .text-with-big-image-container .text-container .title {
-  font-family: 'Futura Bold';
+  font-family: 'FuturaStd-Bold';
 }
 
 .text-with-big-image-container .text-container .title p {
@@ -445,7 +452,7 @@ main{
 
 .text-with-big-image-container .text-container .content {
   font-size: 12px;
-  font-family: 'Gotham Book Regular';
+  font-family: 'Gotham-Book';
 }
 
 @media (min-width: 951px) {
@@ -460,7 +467,7 @@ main{
   background-color: white;
   text-transform: uppercase;
   align-self: flex-end;
-  font-family: 'Gotham Book Regular';
+  font-family: 'Gotham-Book';
 }
 
 .text-with-big-image-container .big-image {
@@ -542,12 +549,11 @@ main{
 
 @media (min-width: 951px) {
   .text-with-image-grid-container .text-container {
-    /* width: 30%; */
   }
 }
 
 .text-with-image-grid-container .text-container .title {
-  font-family: 'Futura Bold';
+  font-family: 'FuturaStd-Bold';
 }
 
 .text-with-image-grid-container .text-container .title p {
@@ -560,7 +566,7 @@ main{
 
 .text-with-image-grid-container .text-container .content {
   font-size: 12px;
-  font-family: 'Gotham Book Regular';
+  font-family: 'Gotham-Book';
 }
 
 @media (min-width: 951px) {
@@ -571,17 +577,16 @@ main{
 
 .text-with-image-grid-container .text-container .more-info-button {
   color: #7c9493;
-  border: 5px solid #75cdc8;
+  border: 4px solid #75cdc8;
   background-color: white;
   text-transform: uppercase;
   align-self: flex-end;
-  font-family: 'Gotham Book Regular';
+  font-family: 'Gotham-Book';
 }
 
 .text-with-image-grid-container .image-grid-container {
-  width: 30%;
-  margin-left: initial;
-  margin-right: initial;
+  /* margin-left: initial;
+  margin-right: initial; */
 }
 
 @media (max-width: 950px) {
@@ -596,7 +601,8 @@ main{
 }
 
 .text-with-image-grid-container .image-grid-container .img-container img {
-  max-height: 50px;
+  max-width: 70px;
+  height: auto;
 }
 
 @media (max-width: 950px) {
@@ -606,22 +612,24 @@ main{
 }
 
 .text-with-image-grid-container .image-grid-container .subtitle {
-  font-family: 'Futura Bold';
+  font-family: 'FuturaStd-Bold';
   color: white;
   font-size: 10px;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
-.text-with-image-grid-container .image-grid-container .subtitle p {
+.text-with-image-grid-container .image-grid-container .subtitle span {
   background-color: #7c9493;
   text-align: center;
 }
 
-.text-with-image-grid-container .image-grid-container .subtitle p span {
+.text-with-image-grid-container .image-grid-container .subtitle span p {
   float: left;
   clear: both;
   background-color: #7c9493;
   padding: 3px 10px;
+  margin-bottom: 0;
 }
 
 /* TEXT WITH VIDEO */
@@ -673,12 +681,13 @@ main{
 
 @media (min-width: 951px) {
   .text-with-video-container .text-container {
-    width: 30%;
+    /* width: 30%; */
+    padding-left: 30px;
   }
 }
 
 .text-with-video-container .text-container .title {
-  font-family: 'Futura Bold';
+  font-family: 'FuturaStd-Bold';
 }
 
 .text-with-video-container .text-container .title p {
@@ -691,7 +700,7 @@ main{
 
 .text-with-video-container .text-container .content {
   font-size: 12px;
-  font-family: 'Gotham Book Regular';
+  font-family: 'Gotham-Book';
 }
 
 @media (min-width: 951px) {
@@ -706,7 +715,7 @@ main{
   background-color: white;
   text-transform: uppercase;
   align-self: flex-end;
-  font-family: 'Gotham Book Regular';
+  font-family: 'Gotham-Book';
 }
 
 .text-with-video-container .video-container {
