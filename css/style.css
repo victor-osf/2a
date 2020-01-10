@@ -437,7 +437,8 @@ main{
 @media (max-width: 950px) {
   .text-with-big-image-container .big-image {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -615,7 +616,7 @@ main{
 @media (max-width: 950px) {
   .text-with-video-container {
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
   }
 }
 
