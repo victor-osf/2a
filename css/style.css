@@ -163,11 +163,11 @@ main{
 @media screen and (max-width: 425px) {
 
   .image-grid-container.column-2 {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .image-grid-container.column-3 {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
@@ -437,7 +437,8 @@ main{
   .text-with-big-image-container {
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: nowrap; */
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -459,10 +460,9 @@ main{
   flex-direction: column;
 }
 
-@media screen and (min-width: 951px) and (max-width: 991px) {
+@media screen and (min-width: 951px) and (max-width: 1199px) {
   .text-with-big-image-container .text-container {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 15px 60px;
   }
 }
 
@@ -528,7 +528,7 @@ main{
 
 
 .text-with-big-image-container .big-image .img-container img {
-  height: 215px;
+  height: 260px;
 }
 
 @media screen and (max-width: 768px) { 
